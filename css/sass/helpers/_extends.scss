@@ -1,0 +1,31 @@
+%sliderh1 {
+    font-size: 22px;
+    font-family: bold;
+    color: #000000;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        justify-content: center;
+    }
+
+    a {
+        font-size: 16px;
+        font-family: roman;
+        color: #a5a5a5;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            color: #000000;
+        }
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+
+    }
+
+}
+
+// @extend %sliderh1;

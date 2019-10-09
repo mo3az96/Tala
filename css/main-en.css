@@ -1,0 +1,93 @@
+.head .search-btn {
+  left: auto;
+  right: 3px;
+}
+.head .menubtn {
+  margin-left: 0;
+  margin-right: 5px;
+}
+.head .sign-bar div {
+  margin-left: 8px;
+  margin-right: 0;
+}
+.head .sign-bar div:first-child {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.main-nav .menu {
+  width: 550px;
+}
+@media (max-width: 768px) {
+  .main-nav .menu {
+    margin-left: 30px;
+    margin-right: 0;
+  }
+}
+
+.xs-nav .closebtn {
+  left: auto;
+  right: 0px;
+  margin-right: 25px;
+  margin-left: 0;
+}
+
+.news .search-input {
+  border-left: 1px solid #000;
+  border-right: none;
+}
+.news .search-input:focus {
+  border-left: 1px solid #f77fbe;
+  border-right: none;
+}
+.news .search-btn {
+  left: auto;
+  right: 25px;
+}
+@media (max-width: 768px) {
+  .news .search-btn {
+    left: auto;
+    right: 0;
+  }
+}
+
+.copy img {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+.accordion:after {
+  margin-right: 5px;
+  margin-left: 0;
+  float: right;
+}
+
+@keyframes inscreen {
+  0% {
+    left: -100%;
+    right: auto;
+  }
+  100% {
+    left: 0;
+    right: auto;
+  }
+}
+.inscreen {
+  animation: inscreen 0.4s ease forwards;
+}
+
+@keyframes outscreen {
+  0% {
+    left: 0;
+    right: auto;
+  }
+  100% {
+    left: -100%;
+    right: auto;
+  }
+}
+.outscreen {
+  animation: outscreen 0.5s ease forwards;
+}
+
+/*# sourceMappingURL=main-en.css.map */

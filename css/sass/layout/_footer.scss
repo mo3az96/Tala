@@ -1,0 +1,148 @@
+.foot {
+    margin-top: 60px;
+    padding-bottom: 60px;
+
+    @media (max-width: 768px) {
+        margin-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    .nav-foot {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    .nav-links {
+        @media (max-width: 768px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    h3 {
+        font-size: 16px;
+        color: #000000;
+        font-family: bold;
+        margin-bottom: 20px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .follw {
+        width: 360px;
+
+        @media (min-width: 769px) and (max-width:991px) {
+            width: auto;
+        }
+
+        @media (max-width: 768px) {
+            width: auto;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    a {
+        font-size: 14px;
+        color: #737373;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            color: #000000;
+        }
+    }
+
+    .socials {
+        display: flex;
+
+        @media (max-width: 768px) {
+            justify-content: space-between;
+            padding: 0 50px;
+        }
+    }
+
+    .social {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+        background-color: transparent;
+        @include transition(all 0.5s ease-in-out);
+
+        font-size: 16px;
+
+        &:hover {
+            color: #fff;
+            background-color: #000;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 20px;
+
+        }
+    }
+
+}
+
+
+.copyright {
+    border-top: 1px solid #ededed;
+    min-height: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+}
+
+.copy {
+    font-size: 12px;
+    color: #737373;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        order: 2;
+    }
+
+    img {
+        margin-right: 5px;
+    }
+
+    p {
+        display: inline-block;
+
+        @media (max-width: 768px) {
+            display: block;
+            line-height: 2;
+        }
+    }
+
+    i {
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+}
+
+.payments {
+    @media (max-width: 768px) {
+        order: 1;
+        margin-bottom: 5px;
+    }
+}

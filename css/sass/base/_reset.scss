@@ -1,0 +1,62 @@
+body {
+    font-family: roman;
+}
+
+.container {
+    max-width: 1170px;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:active {
+        text-decoration: none;
+    }
+
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+input,
+button,
+textarea,
+.btn {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+
+    &:focus {
+        text-decoration: none;
+        outline: none;
+        box-shadow: none;
+        border: none;
+    }
+
+    &:hover {
+        text-decoration: none;
+        outline: none;
+        box-shadow: none;
+        border: none;
+    }
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}

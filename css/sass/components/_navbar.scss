@@ -1,0 +1,91 @@
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #f2f2f2;
+    border-top: 1px solid #f2f2f2;
+    height: 45px;
+    margin-bottom: 18px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+
+    .menu {
+        width: 490px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 0;
+            margin-right: 30px;
+            padding-top: 60px;
+        }
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        height: 45px;
+        border-bottom: 1px solid #f2f2f2;
+        cursor: pointer;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            border-color: $pinkcolor;
+
+            a {
+                color: $pinkcolor;
+            }
+        }
+
+        @media (max-width: 768px) {
+            border: none;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    a {
+        color: #000;
+        font-size: 16px;
+        @include transition(all 0.3s ease-in-out);
+    }
+}
+
+.xs-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-color: rgba($pinkcolor, $alpha: 0.7);
+    background-color: rgba(#000, 0.75);
+    z-index: 9;
+
+    .main-xs-nav {
+        display: flex;
+        position: fixed;
+        z-index: 10;
+        background-color: #fff;
+        width: 260px;
+        height: 100%;
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 25px;
+        font-size: 15px;
+        cursor: pointer;
+        left: 0px;
+        margin-left: 25px;
+    }
+}

@@ -1,0 +1,460 @@
+.main-slider {
+    margin-bottom: 38px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 30px;
+    }
+
+    .owl-nav {
+        margin-top: 0px;
+        position: absolute;
+        top: 45%;
+        transform: translateY(-50%);
+        width: 100%;
+
+        [class*=owl-] {
+            i {
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                background-color: rgba(#000, 0.502);
+                color: #fff;
+                position: absolute;
+                font-size: 12px;
+                @include transition(all 0.3s ease-in-out);
+
+                &:hover {
+                    background-color: rgba($pinkcolor, 1);
+                }
+            }
+        }
+
+        .owl-next {
+            i {
+                left: 22px;
+            }
+        }
+
+        .owl-prev {
+            i {
+                right: 22px;
+            }
+        }
+    }
+
+    .owl-dots {
+        position: absolute;
+        bottom: 26px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @media (max-width: 768px) {
+            bottom: 5px;
+        }
+
+        @media (min-width: 769px) and (max-width:991px) {
+            bottom: 15px;
+        }
+
+        .owl-dot {
+            &.active {
+                span {
+                    background-color: $pinkcolor;
+                    background: $pinkcolor;
+                    opacity: 1;
+                }
+            }
+
+            span {
+                border-radius: 50%;
+                background-color: #000000;
+                background: #000000;
+                opacity: 0.502;
+                width: 8px;
+                height: 8px;
+                margin: 0 3px;
+                @include transition(all 0.3s ease-in-out);
+
+                &:hover {
+                    background-color: $pinkcolor;
+                    background: $pinkcolor;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        span {
+            background-color: $pinkcolor;
+            background: $pinkcolor;
+            opacity: 1;
+        }
+    }
+}
+
+.best-seller {
+    h1 {
+        @extend %sliderh1;
+    }
+}
+
+.specials {
+    h1 {
+        @extend %sliderh1;
+        justify-content: space-between;
+
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
+    }
+
+    .show-all {
+        font-size: 16px;
+        font-family: roman;
+        color: #a5a5a5;
+        @include transition(all 0.3s ease-in-out);
+        display: none;
+        text-align: center;
+        margin-top: 20px;
+
+        &:hover {
+            color: #000000;
+        }
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+    }
+}
+
+.new-arrival {
+    h1 {
+        @extend %sliderh1;
+        justify-content: space-between;
+
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
+    }
+
+    .show-all {
+        font-size: 16px;
+        font-family: roman;
+        color: #a5a5a5;
+        @include transition(all 0.3s ease-in-out);
+        display: none;
+        text-align: center;
+        margin-top: 20px;
+
+        &:hover {
+            color: #000000;
+        }
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+    }
+}
+
+.Product-slider {
+    .product {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .item-img {
+        border: 1px solid #f2f2f2;
+        width: 216px;
+        height: 241px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        margin: auto;
+
+        img {
+            @include transition(all 0.3s ease-in-out);
+            z-index: 4;
+            cursor: pointer;
+
+            &:hover {
+
+                transform: scale(1.1);
+
+            }
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+
+        span {
+            position: absolute;
+            font-size: 12px;
+            font-family: bold;
+            color: #e86cad;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: rgb(252, 216, 235);
+            top: 9px;
+            right: 9px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 5;
+        }
+    }
+
+
+
+    .info {
+        text-align: center;
+        margin-top: 18px;
+
+        @media (max-width: 768px) {
+            margin-top: 15px;
+        }
+
+    }
+
+    .product-name {
+        margin-bottom: 6px;
+
+        a {
+            font-size: 14px;
+            color: #000000;
+            @include transition(all 0.3s ease-in-out);
+
+            &:hover {
+                color: #818181;
+            }
+        }
+    }
+
+    .price {
+        font-size: 14px;
+        font-family: bold;
+        color: #db5b9e;
+        margin-bottom: 0;
+        display: inline-block;
+    }
+
+    del {
+        font-size: 14px;
+        font-family: bold;
+        color: #9f9f9f;
+    }
+
+    .owl-nav {
+        margin-top: 0px;
+        position: absolute;
+        top: 35%;
+        width: 100%;
+
+        [class*=owl-] {
+            img {
+                margin: 0;
+                position: absolute;
+                @include transition(all 0.3s ease-in-out);
+
+
+            }
+        }
+
+        .owl-next {
+            img {
+                left: -30px;
+
+                @media (min-width: 992px) and (max-width: 1199px) {
+
+                    left: -15px;
+
+                }
+
+            }
+        }
+
+        .owl-prev {
+            img {
+                right: -30px;
+
+                @media (min-width: 992px) and (max-width: 1199px) {
+
+                    right: -15px;
+
+                }
+            }
+        }
+    }
+
+    .owl-dots {
+        @media (max-width: 768px) {
+            margin-top: 5px;
+        }
+
+        .owl-dot {
+            &.active {
+                span {
+                    background-color: $pinkcolor;
+                    background: $pinkcolor;
+                    opacity: 1;
+                }
+            }
+
+            span {
+                border-radius: 50%;
+                background-color: #000000;
+                background: #000000;
+                opacity: 0.502;
+                width: 10px;
+                height: 10px;
+                margin: 0 3px;
+                @include transition(all 0.3s ease-in-out);
+
+                &:hover {
+                    background-color: $pinkcolor;
+                    background: $pinkcolor;
+                    opacity: 1;
+                }
+            }
+
+            &:hover {
+                span {
+                    background-color: $pinkcolor;
+                    background: $pinkcolor;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.brands {
+    margin-top: 135px;
+
+    @media (max-width: 768px) {
+        margin-top: 50px;
+    }
+
+    h1 {
+        @extend %sliderh1;
+        display: none;
+
+        @media (max-width: 768px) {
+            display: flex;
+        }
+    }
+
+    .brand {
+        width: 100%;
+        height: 68px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img {
+        opacity: 0.5;
+        filter: grayscale(100%);
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            filter: none;
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            filter: none;
+            opacity: 1;
+        }
+
+    }
+
+    .owl-nav {
+        margin-top: 0px;
+        position: absolute;
+        top: 13%;
+        width: 100%;
+
+        [class*=owl-] {
+            img {
+                filter: none;
+                opacity: 1;
+                margin: 0;
+                position: absolute;
+                @include transition(all 0.3s ease-in-out);
+            }
+        }
+
+        .owl-next {
+            img {
+                left: -30px;
+
+                @media (min-width: 992px) and (max-width: 1199px) {
+
+                    left: -15px;
+
+                }
+            }
+        }
+
+        .owl-prev {
+            img {
+                right: -30px;
+
+                @media (min-width: 992px) and (max-width: 1199px) {
+
+                    right: -15px;
+
+                }
+            }
+        }
+    }
+
+    .owl-dots {
+        .owl-dot {
+            &.active {
+                span {
+                    background-color: $pinkcolor;
+                    background: $pinkcolor;
+                    opacity: 1;
+                }
+            }
+
+            span {
+                border-radius: 50%;
+                background-color: #000000;
+                background: #000000;
+                opacity: 0.502;
+                width: 10px;
+                height: 10px;
+                margin: 0 3px;
+                @include transition(all 0.3s ease-in-out);
+
+                &:hover {
+                    background-color: $pinkcolor;
+                    background: $pinkcolor;
+                    opacity: 1;
+                }
+            }
+
+            &:hover {
+                span {
+                    background-color: $pinkcolor;
+                    background: $pinkcolor;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

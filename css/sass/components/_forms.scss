@@ -1,0 +1,194 @@
+// header search 
+.head {
+
+    .search {
+        width: 261px;
+        height: 40px;
+
+        @media (max-width: 768px) {
+            display: none;
+            width: 90%;
+        }
+    }
+
+    .search-container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .search-input {
+        width: 100%;
+        height: 100%;
+        padding: 0 29px;
+        background-color: #f7f7f7;
+        border-radius: 25px;
+        font-size: 14px;
+        color: #bbbbbb;
+
+        &::placeholder {
+            font-size: 14px;
+            color: #bbbbbb;
+        }
+    }
+
+
+    .search-btn {
+        position: absolute;
+        top: 50%;
+        left: 3px;
+        transform: translateY(-50%);
+        background-color: transparent;
+
+        i {
+            font-size: 12px;
+            color: #000000;
+            @include transition(all 0.3s ease-in-out);
+
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }
+
+            &:hover {
+                color: $pinkcolor;
+                background-color: transparent;
+            }
+
+            &:active {
+                color: $pinkcolor;
+                background-color: transparent;
+            }
+
+            &:focus {
+                color: $pinkcolor;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+// pop-up search
+.search-pop {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    justify-content: center;
+    // background-color: rgba($pinkcolor, $alpha: 0.7);
+    background-color: rgba(#000, 0.92);
+    z-index: 10;
+    left: 0;
+    top: 0;
+    padding: 160px 0;
+
+
+    .search {
+        @media (max-width: 768px) {
+            display: block;
+            margin: auto
+        }
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 25px;
+        font-size: 15px;
+        cursor: pointer;
+        left: 0px;
+        margin-left: 25px;
+        color: #fff;
+
+        &:hover {
+            background-color: transparent;
+            color: #fff;
+        }
+    }
+}
+
+// newsletter
+.news {
+    .search {
+        height: 100%;
+        width: 570px;
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+
+    .search-container {
+        width: 100%;
+        height: 23px;
+        position: relative;
+
+    }
+
+    .search-input {
+        width: 100%;
+        height: 100%;
+        padding: 0 25px;
+        background-color: transparent;
+        font-size: 14px;
+        color: #bfbebe;
+        border-right: 1px solid #000;
+        @include transition(all 0.3s ease-in-out);
+
+        &:focus {
+            border-right: 1px solid $pinkcolor;
+        }
+
+        &::placeholder {
+            font-size: 14px;
+            color: #bfbebe;
+        }
+    }
+
+
+    .search-btn {
+        position: absolute;
+        top: 50%;
+        left: 25px;
+        transform: translateY(-50%);
+        background-color: transparent;
+
+        @media (max-width: 768px) {
+            left: 0;
+        }
+
+        i {
+            font-size: 18px;
+            color: #1a1b1b;
+            @include transition(all 0.3s ease-in-out);
+
+
+            &:hover {
+                color: $pinkcolor;
+                background-color: transparent;
+            }
+
+            &:active {
+                color: $pinkcolor;
+                background-color: transparent;
+            }
+
+            &:focus {
+                color: $pinkcolor;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+label {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    /* margin: auto; */
+    text-align: center;
+    color: #F00;
+    @include transition(all 1s ease-in-out);
+}

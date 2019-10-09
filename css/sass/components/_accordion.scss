@@ -1,0 +1,33 @@
+.accordion {
+    cursor: pointer;
+    width: 100%;
+    transition: 0.4s;
+
+    &:after {
+        content: '\002B';
+        margin-left: 5px;
+        font-size: 18px;
+        font-family: bold;
+        float: left;
+    }
+
+    &.active {
+
+        &:after {
+            content: "\2212";
+        }
+    }
+
+}
+
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: transparent;
+    margin-bottom: 0;
+}
